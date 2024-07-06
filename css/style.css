@@ -1,0 +1,169 @@
+:root{
+    --primary-color:rgb(178, 188, 192);
+    --secondry-color:antiquewhite;
+    --min-size:font-family:'Lato', sans-serif;
+}
+
+/* Reset */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* global Style */
+body{
+    font-family: var(--min-size);
+}
+
+/* Navbar Style */
+ul , li{
+    list-style: none;
+}
+a{
+    color: rgb(21, 18, 18);
+    text-decoration: none;
+    font-size: 22px;
+}
+.navbar{
+    background-color: var(--primary-color);
+}
+
+.navbar .navbar-container{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .navbar-container .navbar-items ul li {
+    display: inline-block;
+    font-size: 1.8rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar .navbar-container .navbar-brand a{
+    font-size: 1.8rem;
+    transition: color 2s ease-in-out;
+}
+.navbar .navbar-container .navbar-brand a:hover{
+    color: #1ABC9C;
+    background-color:var(--secondry-color);
+    padding: 5px;
+    border-radius: 20px;
+}
+.navbar .navbar-container .navbar-items ul li a{
+    font-style: unset;
+    transition: all 1.3s ease-out;
+}
+.navbar .navbar-container .navbar-items ul li a:hover{
+    background-color: var(--secondry-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+/* End Navbar Style */
+
+.container{
+    width: 75;
+    margin: 0 auto;
+}
+
+/* Showcase */
+.showcase{
+    color: rgba(0, 0, 0, 0.624);
+    background-image: url(../assets/images/IMG-20240707-WA0006.jpg); 
+    text-align: center;
+    padding-top: 20px;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.showcase h2{
+    font-size: 3.4rem;
+}
+
+.showcase hr , 
+.about hr , 
+.skills hr , 
+.account hr{
+    width: 30%;
+    margin: 16px auto;
+    border: 2px solid #1ABC9C;
+    background-color: #1ABC9C;
+}
+.showcase p ,
+.about p{
+    font-size: 1.8rem;
+    width: 60%;
+    margin: 5px auto;
+}
+.showcase button , 
+.about button {
+    padding:14px ;
+    margin-top: 15px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: all 1.6s ease-in;
+}
+
+.showcase button:hover ,
+.about button:hover {
+    color:rgb(144, 110, 66);
+    border: none;
+    background-color: rgb(28, 21, 12);
+
+}
+
+.about{
+    text-align: center;
+    padding-top: 20px;
+    height: 15rem;
+    background-color: antiquewhite;
+
+
+}
+
+.skills .container{
+    background-color: burlywood;
+    text-align: center;
+}
+
+
+.skills .container .box-container{
+    display: flex;
+    justify-content: space-between;
+}
+.skills .container .box-container .box .icon i {
+    font-size: 2.8rem ;
+}
+
+.account .container{
+    background-color: rgb(187, 152, 107);
+    text-align: center;
+}
+
+
+.account .container .box-container{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.account .container .box-container .box .icon i{
+    font-size: 5rem;
+    color:white;
+    flex-direction:column;
+    display:flex;
+    justify-content: center;
+    
+}
+.account .container .box-container .box{
+    width:15%
+    
+}
+
+.account .container .box-container .box button{
+    background-color:rgb(39, 96, 39);
+    border-radius:10px
+}
+
